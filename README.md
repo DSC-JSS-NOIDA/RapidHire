@@ -37,17 +37,6 @@
 	</tr>
 </table>
 
-### Screens
-
-<img width="1680" alt="https://user-images.githubusercontent.com/85623292/193397039-e325248d-ca0a-4ce9-bfa0-d0769830be05.png">
-
-<img width="1680" alt="https://user-images.githubusercontent.com/85623292/193397073-b10ceb93-8ae3-4f89-ab50-8f52bf4c4721.png">
-
-<img width="1680" alt="https://user-images.githubusercontent.com/85623292/193397095-9e44cf28-4f66-4808-b4a3-7e7c9a103f21.png">
-
-
-
-
 ## Set up and contribute in RapidHire⚙️
 
 ### 1. Star and Fork this Repository
@@ -117,8 +106,8 @@ git push --set-upstream origin new-branch
 ```
 ###### From Android Studio:
 
-<img width="1680" alt="https://user-images.githubusercontent.com/85623292/193395823-aa8ae435-40db-4b83-8c7a-8f56badb24d8.jpg">
-<img width="1680" alt="https://user-images.githubusercontent.com/85623292/193396696-86103498-b282-4c81-a4b5-57b2bf2b9f56.png">
+<img width="1680" src="https://user-images.githubusercontent.com/85623292/193395823-aa8ae435-40db-4b83-8c7a-8f56badb24d8.jpg">
+<img width="1680" src="https://user-images.githubusercontent.com/85623292/193396696-86103498-b282-4c81-a4b5-57b2bf2b9f56.png">
 
 
 ### 7. Update Local Repository
