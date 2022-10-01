@@ -134,7 +134,7 @@ To sync your fork, from the directory of your local repository in a terminal win
 ###### At this point, you are ready to make a pull request to the original repository.
 ###### Now navigate to your forked repository, and press the “New pull request” button on your left-hand side of the page.
 
-<img width="1680" alt="https://user-images.githubusercontent.com/85623292/193395999-6bab6c6d-b86d-4ad0-9ff8-a76a7ae7dd94.png">
+<img width="1680" src="https://user-images.githubusercontent.com/85623292/193395999-6bab6c6d-b86d-4ad0-9ff8-a76a7ae7dd94.png">
 
 ### Want to improve it ✨? Feel free to contribute💥💥
 
