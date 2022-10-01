@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "247088604473",
+    "project_id": "rapidhire-66cc7",
+    "storage_bucket": "rapidhire-66cc7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247088604473:android:f962ac573c094ba01fb4e8",
+        "android_client_info": {
+          "package_name": "com.example.rapidhire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "247088604473-ml73ann93m918bg418l86qjs112mqt9a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZD1Z258uhaUlp7yPKDo8IdEFhvbK8W8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "247088604473-ml73ann93m918bg418l86qjs112mqt9a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
