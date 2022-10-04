@@ -1,100 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blue"
     tools:context=".fragments.RegisterFragment">
 
-    <TextView
+
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/profilepic"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+       />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Register Screen"
-        android:textSize="24sp"
-        android:textColor="@color/black"
-        android:textAlignment="center"
-        android:layout_marginTop="25dp"/>
+        android:layout_marginBottom="44dp"
+        android:text="Upload your profile photo"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
         android:layout_gravity="center_vertical"
-        android:orientation="vertical">
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
         <EditText
             android:id="@+id/etusername"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="username"
-            android:inputType="textEmailAddress" />
+            android:layout_height="45sp"
+            android:background="@drawable/custom_input"
+            android:hint="Your Name"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="16dp"
+            android:textColorHint="@color/grey"
+            android:textStyle="bold"
 
+            />
 
         <EditText
-            android:id="@+id/etEmail"
+            android:id="@+id/phonenumber"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
+            android:layout_height="45sp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_input"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:paddingLeft="16dp"
+            android:textColorHint="@color/grey"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etemail"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_input"
             android:hint="Email"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:paddingLeft="16dp"
+            android:textColorHint="@color/grey"
+            android:textStyle="bold" />
+
         <EditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Password"
+            android:layout_height="45sp"
             android:layout_marginTop="16dp"
-            android:inputType="textPassword" />
+            android:background="@drawable/custom_input"
+            android:hint="Create Password"
+            android:inputType="textPassword"
+            android:paddingLeft="16dp"
+            android:textColorHint="@color/grey"
+            android:textStyle="bold" />
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="112dp"
+        android:text="Upload your Resume"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
-        android:layout_gravity="bottom"
-        android:layout_marginBottom="40dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="118dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/btn_login"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="16dp"
-            android:gravity="center"
-            android:text="rEGISTER"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/No_Account"
-            android:gravity="center"
-            android:orientation="horizontal" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/tv_Account"
-                android:layout_gravity="center"
-                android:layout_marginTop="2dp"
-                android:text="Already have an account?"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/tv_signin"
-                android:layout_gravity="center"
-                android:layout_marginTop="2dp"
-                android:text="Sign IN "
-                android:textStyle="bold"/>
-        </LinearLayout>
 
     </LinearLayout>
 
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#266E85"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.949" />
 
-</FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
