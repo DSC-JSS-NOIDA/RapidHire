@@ -1,21 +1,18 @@
 package com.example.rapidhire.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.rapidhire.R
 
-
 class RegisterFragment : Fragment() {
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
     }
 
     override fun onCreateView(
@@ -28,10 +25,6 @@ class RegisterFragment : Fragment() {
         tvLogin.setOnClickListener {
             findNavController().navigate(R.id.action_registerFragment_to_logInFragment)
         }
-
         return view
     }
-
-
-
 }
