@@ -21,10 +21,21 @@ class LogInFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_log_in, container, false)
-        val tvRegister = view.findViewById<TextView>(R.id.tv_register)
+
+        val tvRegister = view.findViewById<TextView>(R.id.textView)
         tvRegister.setOnClickListener {
             findNavController().navigate(R.id.action_logInFragment_to_registerFragment)
         }
+
         return  view
+
+
+
+
+
+
+
     }
+
+
 }
