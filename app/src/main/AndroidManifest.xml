@@ -14,13 +14,13 @@
         android:theme="@style/Theme.RapidHire"
         tools:targetApi="31">
         <activity
-            android:name=".animation"
-            android:exported="false" />
-        <activity
             android:name=".activites.AuthActivity"
             android:exported="false" />
         <activity
             android:name=".activites.AdminUserSelectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activites.CandidateDetailActivity"
             android:exported="false" />
         <activity
             android:name=".activites.SplashScreen"
@@ -33,7 +33,7 @@
         </activity>
         <activity
             android:name=".activites.MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
