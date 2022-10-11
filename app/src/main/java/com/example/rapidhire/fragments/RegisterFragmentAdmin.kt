@@ -10,7 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.rapidhire.R
 
 
-class RegisterFragmentAdmin : Fragment() {
+class RegisterFragmentAdmin : Fragment(R.layout.fragment_register_admin) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,7 +23,7 @@ class RegisterFragmentAdmin : Fragment() {
         val view = inflater.inflate(R.layout.fragment_register_admin, container, false)
         val tvLogin = view.findViewById<TextView>(R.id.tv_signin)
         tvLogin.setOnClickListener {
-            // Code logic to navigate from "fragment_register_admin" layout to "fragment_login" layout
+
         }
         return view
     }
