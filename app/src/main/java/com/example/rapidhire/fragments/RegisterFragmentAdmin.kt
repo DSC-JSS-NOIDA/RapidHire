@@ -8,9 +8,12 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.rapidhire.R
+import com.example.rapidhire.databinding.FragmentRegisterAdminBinding
+import com.example.rapidhire.databinding.FragmentRegisterBinding
 
 
-class RegisterFragmentAdmin : Fragment() {
+class RegisterFragmentAdmin : Fragment(R.layout.fragment_register_admin) {
+    private lateinit var binding: FragmentRegisterAdminBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,11 +23,12 @@ class RegisterFragmentAdmin : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        binding=FragmentRegisterAdminBinding.inflate(inflater,container,false)
         val view = inflater.inflate(R.layout.fragment_register_admin, container, false)
-        val tvLogin = view.findViewById<TextView>(R.id.tv_signin)
+        val tvLogin = binding.tvSignin
         tvLogin.setOnClickListener {
-            // Code logic to navigate from "fragment_register_admin" layout to "fragment_login" layout
+
         }
-        return view
+        return binding.root
     }
 }

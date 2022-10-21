@@ -8,9 +8,11 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.rapidhire.R
+import com.example.rapidhire.databinding.FragmentLogInBinding
 
+class LogInFragment : Fragment(R.layout.fragment_log_in) {
+    private lateinit var binding: FragmentLogInBinding
 
-class LogInFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,22 +22,16 @@ class LogInFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_log_in, container, false)
+        binding= FragmentLogInBinding.inflate(inflater,container,false)
+        val view=binding.root
+        return  view
+    }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         val tvRegister = view.findViewById<TextView>(R.id.textView)
         tvRegister.setOnClickListener {
             findNavController().navigate(R.id.action_logInFragment_to_registerFragment)
         }
-
-        return  view
-
-
-
-
-
-
-
     }
-
-
 }

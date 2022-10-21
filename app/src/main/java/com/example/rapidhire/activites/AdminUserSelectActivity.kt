@@ -7,15 +7,18 @@ import android.os.Handler
 import android.widget.Button
 import androidx.cardview.widget.CardView
 import com.example.rapidhire.R
+import com.example.rapidhire.databinding.ActivityAdminUserSelectBinding
 
 class AdminUserSelectActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityAdminUserSelectBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_admin_user_select)
+        binding=ActivityAdminUserSelectBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        val btnAdmin = findViewById<CardView>(R.id.candidate)
-        val btnUser = findViewById<CardView>(R.id.cardViewRec)
+        val btnAdmin = binding.candidate
+        val btnUser = binding.cardViewRec
 
         btnAdmin.setOnClickListener {
             Handler().postDelayed(Runnable {
