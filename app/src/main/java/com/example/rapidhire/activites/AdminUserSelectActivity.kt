@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
 import android.widget.Button
 import androidx.cardview.widget.CardView
 import com.example.rapidhire.R
@@ -21,17 +22,17 @@ class AdminUserSelectActivity : AppCompatActivity() {
         val btnUser = binding.cardViewRec
 
         btnAdmin.setOnClickListener {
-            Handler().postDelayed(Runnable {
-                val i = Intent(this, AuthActivity::class.java)
+            Handler(Looper.getMainLooper()).postDelayed({
+                val i = Intent(this@AdminUserSelectActivity, AuthActivity::class.java)
                 startActivity(i)
-            }, 3000)
+            }, 1000)
         }
 
         btnUser.setOnClickListener {
-            Handler().postDelayed(Runnable {
-                val i = Intent(this, AuthActivity::class.java)
+            Handler(Looper.getMainLooper()).postDelayed(Runnable {
+                val i = Intent(this@AdminUserSelectActivity, AuthActivity::class.java)
                 startActivity(i)
-            }, 3000)
+            }, 1000)
         }
     }
 }
