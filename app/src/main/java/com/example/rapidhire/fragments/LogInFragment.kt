@@ -30,8 +30,8 @@ class LogInFragment : Fragment(R.layout.fragment_log_in) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val tvRegister = view.findViewById<TextView>(R.id.textView)
-        tvRegister.setOnClickListener {
+        /*tvRegister.setOnClickListener {
             findNavController().navigate(R.id.action_logInFragment_to_registerFragment)
-        }
+        }*/
     }
 }
