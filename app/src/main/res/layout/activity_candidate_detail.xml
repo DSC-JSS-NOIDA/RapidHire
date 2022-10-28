@@ -44,7 +44,7 @@
                 app:civ_border_width="2dp" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/uploadPhotoTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -152,13 +152,18 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/nextBtn"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
         android:layout_marginBottom="20dp"
-        android:text="Next" />
+        android:backgroundTint="#266E85"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp" />
 </RelativeLayout>
