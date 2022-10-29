@@ -1,5 +1,6 @@
 package com.example.rapidhire.activites
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.rapidhire.R
@@ -11,5 +12,11 @@ class UploadResume : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityUploadResumeBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.submitBtn.setOnClickListener {
+            val intent = Intent(this,CandidateDetailActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
